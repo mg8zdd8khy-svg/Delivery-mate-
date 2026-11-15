@@ -1,37 +1,15 @@
 <!doctype html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#101114">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="DeliveryMate">
-<meta name="description" content="DeliveryMate — Twoje zarobki, kilometry i realny zysk z delivery.">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="apple-touch-icon" href="assets/icon-192.png">
-<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css">
-<title>DeliveryMate</title>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101114"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="DeliveryMate">
+  <meta name="description" content="DeliveryMate — Twoje zarobki, kilometry i realny zysk z delivery.">
+  <link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="assets/icon-192.png"><link rel="stylesheet" href="styles.css">
+  <title>DeliveryMate</title>
 </head>
 <body>
-<div id="welcome" class="welcome hidden">
-  <div class="welcome-content">
-    <img class="welcome-logo" src="assets/icon.svg" alt="Logo DeliveryMate">
-    <div class="welcome-brand">Delivery<span>Mate</span></div>
-    <div class="tagline">YOUR DELIVERY. YOUR NUMBERS.</div>
-    <div class="welcome-message">Każdy kilometr<br>przybliża Cię do celu.</div>
-    <p class="welcome-sub">Kontroluj swoje kursy. Analizuj wyniki. Zarabiaj świadomie.</p>
-    <div class="welcome-clock"><strong id="welcomeDate"></strong><span id="welcomeTime"></span></div>
-    <button class="btn welcome-btn" id="welcomeDone">GOTOWY</button>
-  </div>
-</div>
 <div class="app-shell">
-  <header class="topbar">
-    <button class="avatar" id="profileShortcut" aria-label="Profil">DM</button>
-    <div class="brand"><img src="assets/icon.svg" alt="" class="brand-icon"><span>Delivery<span class="accent">Mate</span></span></div>
-    <button class="icon-btn" id="installShortcut" aria-label="Instrukcja instalacji">＋</button>
-  </header>
+  <header class="topbar"><button class="avatar" id="profileShortcut" aria-label="Profil">DM</button><div class="brand"><img class="brand-logo" src="assets/icon-192.png" alt=""><span>Delivery<span class="green">Mate</span></span></div><button class="icon-btn" id="installShortcut" aria-label="Instrukcja instalacji">＋</button></header>
   <main id="app" class="main"></main>
   <nav class="bottom-nav" aria-label="Nawigacja">
     <button data-tab="work" class="nav-item active"><span>◉</span><small>Dzień pracy</small></button>

@@ -1,25 +1,14 @@
-# DeliveryMate V2
+# DeliveryMate V2.1
 
-PWA do rejestrowania pracy delivery, zarobków, kilometrów i kosztów paliwa.
+**YOUR DELIVERY. YOUR NUMBERS.**
 
-## Publikacja przez GitHub Pages
-1. Utwórz publiczne repozytorium na GitHubie.
-2. Wgraj całą zawartość tego folderu do katalogu głównego repozytorium.
-3. Wejdź w Settings → Pages.
-4. Wybierz Deploy from a branch → `main` → `/ (root)` → Save.
-5. Po publikacji otwórz adres HTTPS w Safari na iPhonie.
-6. Udostępnij → Dodaj do ekranu głównego.
+Wersja V2.1 bazuje na przesłanym kodzie DeliveryMate. Zawiera konfigurację pojazdów, odczyt licznika narastająco, koszty paliwa, progi opłacalności, welcome screen i zieloną identyfikację wizualną.
 
-## Funkcje
-- Ekran powitalny z datą i godziną.
-- Własna lista pojazdów: skuter, samochód, rower.
-- Konfiguracja ceny paliwa i progów opłacalności przy starcie dnia.
-- Kilometry z narastającego stanu licznika.
-- Ocena zamówienia na podstawie zarobku netto/km.
-- Statystyki dzienne, miesięczne i platformowe.
-- Zamykanie dnia i podsumowanie.
-- Lokalny zapis danych i eksport kopii JSON.
-- Instrukcja instalacji na ekranie głównym iPhone'a.
+## Publikacja
+1. Rozpakuj ZIP.
+2. Wgraj zawartość folderu `DeliveryMate-V2.1` do głównego katalogu repozytorium GitHub.
+3. GitHub → Settings → Pages → Deploy from a branch → `main` → `/ (root)`.
+4. Po publikacji otwórz stronę w Safari na iPhonie i wybierz Udostępnij → Dodaj do ekranu głównego.
 
-## Ważne ograniczenia
-To wersja PWA działająca lokalnie w przeglądarce. Dane są zapisane na urządzeniu w localStorage; nie ma konta ani synchronizacji między urządzeniami. Logo jest autorskim wektorowym opracowaniem zatwierdzonego kierunku, a nie oficjalnym znakiem żadnej platformy delivery. Oceny kursów bazują na wpisanych kwotach i przebiegu; nie ma automatycznego pobierania danych z Uber Eats, Glovo ani Pyszne.pl.
+## Ważne
+Dane są przechowywane lokalnie w przeglądarce (`localStorage`). Eksportuj kopię JSON z Profilu. Aplikacja nie pobiera automatycznie danych z Glovo, Uber Eats ani Pyszne i nie używa GPS. Wszystkie kursy wpisujesz ręcznie.
