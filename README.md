@@ -1,30 +1,25 @@
-# DeliveryMate
+# DeliveryMate V2
 
-**YOUR DELIVERY. YOUR NUMBERS.**
+PWA do rejestrowania pracy delivery, zarobków, kilometrów i kosztów paliwa.
 
-Mobile-first PWA for tracking delivery income, kilometres, fuel costs and net earnings.
+## Publikacja przez GitHub Pages
+1. Utwórz publiczne repozytorium na GitHubie.
+2. Wgraj całą zawartość tego folderu do katalogu głównego repozytorium.
+3. Wejdź w Settings → Pages.
+4. Wybierz Deploy from a branch → `main` → `/ (root)` → Save.
+5. Po publikacji otwórz adres HTTPS w Safari na iPhonie.
+6. Udostępnij → Dodaj do ekranu głównego.
 
-## Run locally
+## Funkcje
+- Ekran powitalny z datą i godziną.
+- Własna lista pojazdów: skuter, samochód, rower.
+- Konfiguracja ceny paliwa i progów opłacalności przy starcie dnia.
+- Kilometry z narastającego stanu licznika.
+- Ocena zamówienia na podstawie zarobku netto/km.
+- Statystyki dzienne, miesięczne i platformowe.
+- Zamykanie dnia i podsumowanie.
+- Lokalny zapis danych i eksport kopii JSON.
+- Instrukcja instalacji na ekranie głównym iPhone'a.
 
-Open `index.html` in a browser for a basic preview. For service-worker/offline testing, serve the folder over HTTP, e.g.:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
-
-## Publish with GitHub Pages
-
-1. Create a new GitHub repository (e.g. `deliverymate`).
-2. Upload all files and the `assets` folder from this project to the repository root.
-3. In **Settings → Pages**, select **Deploy from a branch**, choose `main` and `/ (root)`, then save.
-4. Wait for GitHub Pages to publish the HTTPS URL.
-5. Open that URL in Safari on iPhone, tap Share → **Add to Home Screen** → Add.
-
-## Data and limitations
-
-- Entries are saved locally in the browser using `localStorage` on that device.
-- Export a JSON backup from Profile. Clearing Safari website data or changing browser/device can remove access to local entries; there is no cloud sync/account system yet.
-- The app does not use GPS or read delivery platform apps automatically. Enter order totals and kilometres manually.
-- Installability requires HTTPS; GitHub Pages provides HTTPS.
+## Ważne ograniczenia
+To wersja PWA działająca lokalnie w przeglądarce. Dane są zapisane na urządzeniu w localStorage; nie ma konta ani synchronizacji między urządzeniami. Logo jest autorskim wektorowym opracowaniem zatwierdzonego kierunku, a nie oficjalnym znakiem żadnej platformy delivery. Oceny kursów bazują na wpisanych kwotach i przebiegu; nie ma automatycznego pobierania danych z Uber Eats, Glovo ani Pyszne.pl.
